@@ -1,0 +1,34 @@
+# ROS build artifacts
+**/build
+**/install
+**/log
+
+# Python artifacts
+**/__pycache__/
+**/*.pyc
+**/*.so
+**/*.pyd
+
+# Dependencies
+venv/
+.venv/
+.tox/
+.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Common OS files
+.DS_Store
+
+# C++ artifacts
+*.o
+*.a
+*.lo
+*.la
+*.slo
+*.loT
+
+# Temporary files
+*~
