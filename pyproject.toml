@@ -1,0 +1,36 @@
+[project]
+name = "ground-vehicles-system"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Glauber Brennon", email = "glauberbrennon@gmail.com"}
+]
+packages = [{include = "ground_vehicles_system", from = "src"}]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+ruff = "^0.4.5"
+pytest = "^8.2.1"
+mypy = "^1.10.0"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I"]
+ignore = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["ground_vehicles_system"]
+
+[tool.ruff.format]
