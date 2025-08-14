@@ -77,7 +77,7 @@ class TestVehicle:
             vehicle_id=vehicle_id,
         )
 
-        assert vehicle_id == vehicle_id
+        assert vehicle._id == vehicle_id
 
     def test_create_when_heading_then_use_provided_heading(
         self,
