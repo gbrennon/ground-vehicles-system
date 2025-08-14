@@ -1,26 +1,33 @@
-[project]
+[tool.poetry]
 name = "ground-vehicles-system"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Glauber Brennon", email = "glauberbrennon@gmail.com"}
-]
-packages = [{include = "ground_vehicles_system", from = "src"}]
+description = "Ground Vehicles System architectural template for Python projects"
+authors = ["Glauber Brennon <glauberbrennon@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.12"
+packages = [{include = "ground_vehicles_system", from = "src"}]
+keywords = [
+    "clean architecture",
+    "ros2",
+    "hexagonal architecture",
+    "software architecture",
+]
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
-python = ">=3.12"
+python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.7.1"
 ruff = "^0.4.5"
 pytest = "^8.2.1"
 mypy = "^1.10.0"
+setuptools = "^80.9.0"
+pytest-cov = "^6.2.1"
 
 [tool.ruff]
 line-length = 88
@@ -34,3 +41,12 @@ ignore = []
 known-first-party = ["ground_vehicles_system"]
 
 [tool.ruff.format]
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-report=term-missing --cov-report=xml --cov-fail-under=80"
+markers = [
+    "docker: marks tests that should only run inside a docker container",
+    "copyright: marks tests as copyright checks",
+    "linter: makrs tests as flake8 code style checks",
+    "pep257: marks tests as PEP 257 docstring style checks",
+]

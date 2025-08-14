@@ -1,0 +1,11 @@
+services:
+  ros2:
+    build: .
+    container_name: ground_vehicles_ros2
+    volumes:
+      - ./:/app:cached
+    working_dir: /app
+    tty: true
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: bash
