@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 package_name = "ground_vehicles_system"
 package_description = (
-    "Ground Vehicles System RO2 package applying Clean Architecture principles"
+    "Ground Vehicles System ROS2 package applying Clean Architecture principles"
 )
 
 setup(
