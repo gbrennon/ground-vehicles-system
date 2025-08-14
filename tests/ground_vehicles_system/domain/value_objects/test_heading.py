@@ -9,7 +9,7 @@ class TestHeading:
         expected = 0.0
         assert actual_heading.radians == expected
 
-    def test_radians_when_value_is_90_then_result_is_pi_dividided_by_2(self):
+    def test_radians_when_value_is_90_then_result_is_pi_divided_by_2(self):
         actual_heading = Heading(90.0)
 
         expected = 1.5707963267948966  # π/2
