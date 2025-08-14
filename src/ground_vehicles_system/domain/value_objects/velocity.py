@@ -17,6 +17,7 @@ class VelocityConstants:
     )
     MILES_PER_HOUR_TO_KILOMETERS_PER_HOUR = 1 / KILOMETERS_PER_HOUR_TO_MILES_PER_HOUR
 
+
 class VelocityUnit(StrEnum):
     """Enumeration for standard velocity units."""
     MPS = "m/s"
