@@ -2,7 +2,6 @@ FROM ros:humble-ros-core
 
 RUN apt-get update && apt-get install -y python3-pip python3-venv curl \
     && pip3 install --upgrade pip
-
 RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-venv \
