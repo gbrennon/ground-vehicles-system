@@ -41,7 +41,7 @@ class TestVelocity:
         expected = 10.0
         assert pytest.approx(velocity.to_mps()) == expected
 
-    def test_from_unit_when_positive_vale_and_unit_is_kph_then_sets_value(
+    def test_from_unit_when_positive_value_and_unit_is_kph_then_sets_value(
         self
     ) -> None:
         actual_value = 36.0
