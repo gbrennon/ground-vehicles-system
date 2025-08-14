@@ -3,10 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import StrEnum
 
-from ground_vehicles_system.domain.errors.velocity_errors import (
-    NotAllowedNegativeVelocityError
-)
-
 
 class VelocityConstants:
     """Constants for precise velocity conversions."""
