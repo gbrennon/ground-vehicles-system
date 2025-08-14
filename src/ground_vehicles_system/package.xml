@@ -4,7 +4,7 @@
   <name>ground_vehicles_system</name>
   <version>0.1.0</version>
   <description>
-      Ground Vehicles System RO2 package applying Clean Architecture principles
+      Ground Vehicles System ROS2 package applying Clean Architecture principles
   </description>
   <maintainer email="glauberbrennon@gmail.com">root</maintainer>
   <license>MIT</license>
